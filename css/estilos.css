@@ -1,0 +1,33 @@
+body {
+	background: peru;
+}
+
+figure {
+	text-align: center;
+	background: url(../img/load.gif) no-repeat center center;
+	overflow: hidden;
+}
+
+/*img {
+	width: 500px;
+	height: 243px;
+}*/
+
+.b-lazy {
+	-webkit-transition: opacity 500ms ease-in-out;
+ 	   -moz-transition: opacity 500ms ease-in-out;
+       -o-transition: opacity 500ms ease-in-out;
+          transition: opacity 500ms ease-in-out;
+           max-width: 100%;
+             opacity: 0;
+             left: -40%;
+    }
+
+.b-lazy.b-loaded {
+ 	opacity: 1;
+ }
+
+.b-loaded {
+ 	opacity: 1;
+ 	left: 0;
+ }

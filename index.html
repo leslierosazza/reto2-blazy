@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Hacer una transición al cargar las imagenes con bLazy</title>
+</head>
+<body>
+	<figure>
+		<img class="b-lazy.b-loaded" data-src="img/CIMG5522.JPG" alt="Cusco" width="500" height="243">
+	</figure>
+	<figure>
+		<img class="b-lazy.b-loaded" data-src="img/IMG_20150130_173952268.jpg" alt="Vista al mar" width="350" height="400">
+	</figure>
+	<figure>
+		<img class="b-lazy.b-loaded" data-src="img/IMG_20151213_111019924_HDR.jpg" alt="Playa Santa Maria del Mar" width="500" height="243">
+	</figure>
+	<figure>
+		<img class="b-lazy.b-loaded" data-src="img/IMG_20160301_164737181_HDR.jpg" alt="" width="350" height="400">
+	</figure>
+	<figure>
+		<img class="b-lazy.b-loaded" data-src="img/IMG_20160524_131303841.jpg" alt="" width="500" height="243">
+	</figure>
+	<figure>
+		<img class="b-lazy.b-loaded" data-src="img/LUCERO_018.jpg" alt="" width="500" height="243">
+	</figure>
+	<figure>
+		<img class="b-lazy.b-loaded" data-src="img/IMG_20171022_192840263.jpg" alt="" width="500" height="243">
+	</figure>
+</body>
+<script src="js/funciones.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+<script type="text/javascript">
+	// lazy loading
+			var bLazy = new Blazy({
+    		selector: 'img'
+			});
+</script>
+</html>
